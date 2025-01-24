@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with SweetAlert</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- SweetAlert2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MyWebsite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <!-- Login/Signup Buttons -->
+        <div class="d-flex">
+          <button id="loginBtn" class="btn btn-outline-primary me-2">Login</button>
+          <button id="signupBtn" class="btn btn-primary">Signup</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script src="./nav.js"></script>
+
+
+  <!-- <script>
+    // Login Button SweetAlert
+    document.getElementById("loginBtn").addEventListener("click", function() {
+      Swal.fire({
+        title: 'Login',
+        html: `
+          <input type="email" id="email" class="swal2-input" placeholder="Email">
+          <input type="password" id="password" class="swal2-input" placeholder="Password">
+        `,
+        confirmButtonText: 'Login',
+        focusConfirm: false,
+        preConfirm: () => {
+          const email = Swal.getPopup().querySelector('#email').value;
+          const password = Swal.getPopup().querySelector('#password').value;
+          if (!email || !password) {
+            Swal.showValidationMessage(`Please enter email and password`);
+          }
+          return { email: email, password: password };
+        }
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(`Logged in as: ${result.value.email}`);
+        }
+      });
+    });
+
+    // Signup Button SweetAlert
+    document.getElementById("signupBtn").addEventListener("click", function() {
+      Swal.fire({
+        title: 'Signup',
+        html: `
+          <input type="text" id="name" class="swal2-input" placeholder="Full Name">
+          <input type="email" id="email" class="swal2-input" placeholder="Email">
+          <input type="password" id="password" class="swal2-input" placeholder="Password">
+        `,
+        confirmButtonText: 'Signup',
+        focusConfirm: false,
+        preConfirm: () => {
+          const name = Swal.getPopup().querySelector('#name').value;
+          const email = Swal.getPopup().querySelector('#email').value;
+          const password = Swal.getPopup().querySelector('#password').value;
+          if (!name || !email || !password) {
+            Swal.showValidationMessage(`Please fill in all fields`);
+          }
+          return { name: name, email: email, password: password };
+        }
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(`Welcome, ${result.value.name}!`);
+        }
+      });
+    });
+  </script> -->
+</body>
+</html>
