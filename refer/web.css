@@ -1,0 +1,139 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    /* width:100%; */
+    overflow-x: hidden;
+    overflow-y: hidden; 
+
+}
+/* body{ */
+    /* align-items: center; */
+    /* margin-top: 100px; */
+    /* background-image: url("https://www.zenloop.com/en/wp-content/uploads/sites/2/2022/09/220920-zenloop-Article-Header-Improving-Online-Reviews-with-zenloop.jpg"); */
+/* }  */
+
+.container-fluid{
+    /* color: #007bff; */
+    background-color: #007bff;
+    width:100%;
+    padding:10px;
+    margin-top:0px;
+
+}
+.quote{
+    /* border: 1px solid black; */
+    width:500px;
+    height:100px;
+    margin-left: 60%;
+    margin-top:50px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.search-bar {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 50px 12px 20px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    color: #c0c0c0;
+}
+
+.search-bar button {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    color: #007bff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    color: #0056b3;
+}
+
+
+
+
+.carousel-container {
+    position: relative;
+  }
+  .carousel-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px;
+  }
+  .carousel-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .category-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 120px;
+    flex-shrink: 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .category-icon {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  .category-title {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .carousel-nav.left {
+    left: 10px;
+  }
+  .carousel-nav.right {
+    right: 10px;
+  }
+  .see-more-btn {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+  }
