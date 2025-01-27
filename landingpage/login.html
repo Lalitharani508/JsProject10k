@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <!-- <link rel="stylesheet" href="./landing.css"> -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        #login-form{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid balck;
+            align-items: center;
+            background-color:white;
+            align-items: center;
+            align-content: center;
+            width:30%;
+            height: 70%;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding:20px;
+            margin-left: 30%;
+            margin-top: 10%;
+            box-shadow: 1px 1px 1px black;
+    
+
+        }
+        input{
+            width:250px;
+            height:20px;
+            /* padding:10px */
+        }
+        button{
+            /* background-color: ; */
+            width:200px;
+            padding:10px;
+            border-radius: 10px;
+            background-color: hsl(241, 55%, 55%);
+        }
+        #forget{
+            /* padding:5px; */
+            margin-right:200px;
+            margin-bottom:10px;
+        }
+        .member{
+            display: flex;
+            gap:10px;
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body style="background-color: hsl(241, 55%, 55%);">
+    
+
+    <form action="" id="login-form">
+        <!-- <label for="">Email here</label>  -->
+    <h2>Login Credentials</h2>
+
+        <input type="email" name="" id="email" placeholder="Email here">
+        <br> <br>
+        <!-- <label for="">Password here</label>  -->
+        <input type="password" name="" id="password" placeholder="Password here"><br><br>
+        <a href="" id="forget">Forget Password ?</a>
+
+        <button type="submit">Submit</button><br>
+
+        <div class="member"><p>Not a Member ? </p>
+        <a href="./signup.html" id="signup">signup Now</a></div>
+    </form>
+
+    <script  type="module" src="./login.js"></script>
+</body>
+</html>

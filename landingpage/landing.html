@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <link rel="stylesheet" href="./landing.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="./landing.js"></script>
+
+  <style>
+    .container-fluid{
+        /* text-decoration: none; */
+        /* border: 1px solid #CDC1FF; */
+        background-color: #CDC1FF;
+        padding:10px;
+        margin-top: 0px;
+
+
+    }
+    #signupbtn,#loginbtn{
+        text-decoration: none;
+        border: 1px solid black;
+        gap:5px;
+        border-radius: 5px;
+        padding:5px;
+        color: black;
+        border-color:#CDC1FF ;
+    }
+    #searchbar{
+        width:50%;
+        border-radius: 6px;
+        /* margin-right: 100px; */
+
+    }
+    .bodypart{
+        display: flex;
+        /* flex-direction: column; */
+        margin-top: 50px;
+        /* align-items: center; */
+        
+    }
+    .leftpart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .landingimg{
+        width: 50%;
+    }
+    .landingimg>a{
+        width: 100%;
+    }
+    .get{
+        text-decoration: none;
+        border: 1px solid #CDC1FF;
+        width:100px;
+        box-shadow: 2px 1px 1px black;
+        padding: 5px;
+
+    }
+
+  </style>
+</head>
+<body>
+
+    <nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <h1 class="navbar-brand" href="#">Welcome to Reveiw Platform</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Write a Reveiw</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Categories</a>
+                  </li>
+                </ul>
+               <div class="searchwithloginsignup">
+                <input type="search" name="" id="searchbar" placeholder="search Here">
+
+                <a href="./login.html" id="loginbtn">Login</a>
+                <a href="./signup.html" id="signupbtn">signup</a>
+               </div>
+
+
+
+              </div>
+            </div>
+          </nav>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class=" bodypart">
+        <div >
+            <div class="leftpart">
+                <h1>
+                    customer Reveiws
+                </h1>
+                <h3>
+                    "Real reviews, real decisions – we believe in the power of shared experiences to guide your choices."
+                </h3>
+                <div class="get">
+                    <!-- <button href="./home.html" type="submit">Get Started</button> -->
+                     <a href="./signup.html">Get Started</a>
+                </div>
+            </div>
+        </div class="landingimg">
+        <img src="https://blogimage.vantagecircle.com/content/images/2020/02/Employee-Feedback-Examples.png" alt="" width="1600px">
+
+    </div>
+
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

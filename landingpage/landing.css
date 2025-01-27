@@ -1,0 +1,13 @@
+.parent-container{
+    display: flex;
+    flex-wrap: flex wrap;
+
+
+}
+.parent-container>.card>{
+    background-color: aqua;
+    
+
+    
+
+}
